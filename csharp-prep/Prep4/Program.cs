@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         int sum = 0;
-        int average = 0;
+        
         int largest = 0;
 
 
@@ -31,7 +31,7 @@ class Program
             }
             sum += number;
         }
-        average = sum / numbers.Count;
+        float average = ((float)sum) / numbers.Count;
         Console.WriteLine($"The sum is: {sum}");
         Console.WriteLine($"The average is: {average}");
         Console.WriteLine($"The largest number is: {largest}");
