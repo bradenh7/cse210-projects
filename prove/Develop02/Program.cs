@@ -8,6 +8,8 @@ class Program
     {
         PromptGenerator promptGenerator = new PromptGenerator();
         Journal journal = new Journal();
+        Entry entry = new Entry();
+        
 
         while (true)
         {
@@ -24,7 +26,8 @@ class Program
                     Console.WriteLine("You chose to write an entry.");
                     PromptGenerator.GetRandomPrompt();
                     string response = Console.ReadLine();
-                    journal.AddEntry(response);  // Call method to write entry
+                    entry._entry = response;  // Call method to write entry
+                    journal.AddEntry(entry._entry); // Call method to add entry to journal
                 }
                 else if (choice == "2")
                 {
@@ -52,16 +55,28 @@ class Program
                 }
                 else if (choice == "5")
                 {
-                    Console.Clear(); 
-                    Console.WriteLine("Goodbye!");
-                    break;
+                    if (journal._saved == 1)
+                    {
+                        Console.Clear(); 
+                        Console.WriteLine("Goodbye!");
+                        break;
+                    }
+                
+                    else if (journal._saved == 0)
+                    {
+                        Console.Clear(); 
+                        Console.WriteLine("You have unsaved changes. Please save your journal before quitting.");
+                        Console.WriteLine("Press Enter to continue...");
+                        Console.ReadLine(); // Wait for user input before continuing
+                        continue;
+                    }
                 }
                 else
                 {
                     Console.WriteLine("Invalid choice. Please try again.");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Console.WriteLine($"An error occurred");
                 return;

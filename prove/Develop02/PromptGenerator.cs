@@ -2,7 +2,8 @@ using System;
 
 public class PromptGenerator
 {
-    private static string[] prompts = new string[]
+    public static int _index = 0;
+    public static string[] _prompts = new string[]
     {
         "What was the best part of your day?",
         "What are you grateful for today?",
@@ -22,7 +23,7 @@ public class PromptGenerator
     public static void GetRandomPrompt()
     {
         Random random = new Random();
-        int index = random.Next(prompts.Length);
-        Console.WriteLine(prompts[index]);
+        _index = random.Next(_prompts.Length);
+        Console.WriteLine(_prompts[_index]);
     }
 }
