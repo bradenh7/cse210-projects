@@ -12,14 +12,21 @@ public class Word
     }
 
     public string GetWord()
+{
+    if (_hidden)
     {
-        if (_hidden)
-        {
-            if (_word.Length < 1.5)
-                return _word;
-            else 
-                return new string('_', _word.Length);
-        }
-        return _word;
+        return new string('_', _word.Length); 
+    }
+    return _word;
+}
+
+
+    public void Hide()
+    {
+        _hidden = true;
+    }
+    public bool IsHidden()
+    {
+        return _hidden;
     }
 }

@@ -25,6 +25,31 @@ class Program
         Word word17 = new Word("friends");
         Word word18 = new Word(".");
         Scripture scripture = new Scripture(john15_13, new List<Word> { word1, word2, word3, word4, word5, word6, word7, word8, wordc, word9, word10, word11, word12, word13, word14, word15, word16, word17, word18 });
-        scripture.GetScriptureText();
+        
+
+        while (true)
+        {
+            scripture.GetScriptureText();
+            if (scripture.AllWordsHidden())
+            {
+                Console.WriteLine("\n\nAll words are hidden. Press any key to exit.");
+                Console.ReadKey();
+                break;
+            }
+            Console.WriteLine("\n\nPress enter to hide words, type 'quit' to exit.");
+            string input = Console.ReadLine();
+            scripture.HideWords();
+            
+
+            if (input.ToLower() == "quit")
+            {
+                break;
+            }
+            
+            
+            
+            
+        }
+
     }
 }
