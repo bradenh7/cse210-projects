@@ -15,7 +15,10 @@ public class Word
     {
         if (_hidden)
         {
-            return new string('_', _word.Length);
+            if (_word.Length < 1.5)
+                return _word;
+            else 
+                return new string('_', _word.Length);
         }
         return _word;
     }
