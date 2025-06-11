@@ -6,7 +6,7 @@ public class Reflection : Activity
     private List<string> _reflectionQuestions;
 
 
-    public Reflection() : base("Reflection Activity", "This activity encourages you to reflect on your experiences, emotions, and lessons learned.", 60)    
+    public Reflection(int duration) : base("Reflection Activity", "This activity encourages you to reflect on your experiences, emotions, and lessons learned.", duration)    
     {
         _reflectionPrompts = new List<string>
         {

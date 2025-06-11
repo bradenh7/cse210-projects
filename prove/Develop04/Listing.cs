@@ -7,7 +7,7 @@ public class Listing : Activity
 
     
 
-    public Listing() : base("Listing Activity", "This activity will help you reflect on the positive aspects of your life by listing things that you are grateful for, accomplishments, and people who have positively influenced you.", 60)
+    public Listing(int duration) : base("Listing Activity", "This activity will help you reflect on the positive aspects of your life by listing things that you are grateful for, accomplishments, and people who have positively influenced you.", duration)
     {
         
         _prompts = new List<string>
