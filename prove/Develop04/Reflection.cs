@@ -1,12 +1,12 @@
 using System;
 
-public class Reflection
+public class Reflection : Activity
 {
     private List<string> _reflectionPrompts;
     private List<string> _reflectionQuestions;
 
 
-    public Reflection(int duration)
+    public Reflection() : base("Reflection Activity", "This activity encourages you to reflect on your experiences, emotions, and lessons learned.", 60)    
     {
         _reflectionPrompts = new List<string>
         {
@@ -26,7 +26,7 @@ public class Reflection
     public void StartReflection()
     {
         Console.WriteLine("Starting Reflection Activity...");
-        Activity.DisplayActivityDetails();
+        DisplayActivityDetails();
         Console.WriteLine("Please reflect on the following prompts:");
 
         foreach (var prompt in _reflectionPrompts)

@@ -1,12 +1,15 @@
 using System;
 
-public class Listing
+public class Listing : Activity
 {
     private List<string> _prompts;
     private List<string> _userResponses;
 
-    public Listing(int duration)
+    
+
+    public Listing() : base("Listing Activity", "This activity will help you reflect on the positive aspects of your life by listing things that you are grateful for, accomplishments, and people who have positively influenced you.", 60)
     {
+        
         _prompts = new List<string>
         {
             "List three things you are grateful for today.",

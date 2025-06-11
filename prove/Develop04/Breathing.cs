@@ -2,8 +2,7 @@ using System;
 
 public class Breathing : Activity
 {
-    public Breathing(int duration)
-        : base("Breathing", "Focus on your breathing to relax and center yourself.", duration)
+    public Breathing(int duration) : base("Breathing", "Focus on your breathing to relax and center yourself.", duration)
     {
     }
 
