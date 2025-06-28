@@ -1,3 +1,5 @@
+using System;
+
 class Program
 {
     static void Main()
@@ -55,6 +57,12 @@ class Program
                     Console.Write("Which goal did you complete? ");
                     int index = int.Parse(Console.ReadLine()) - 1;
                     manager.RecordEvent(index);
+                    Console.WriteLine();
+                    Console.WriteLine("**********************************");
+                    Console.WriteLine("*      :) Congratulations! :)    *");
+                    Console.WriteLine("*     You've completed a goal!   *");
+                    Console.WriteLine("**********************************");
+                    Console.WriteLine();
                     break;
                 case "4":
                     manager.DisplayScore();
