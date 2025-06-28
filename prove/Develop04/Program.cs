@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        Activity activity = new Activity("Develop04 Program", "This program allows you to choose from various activities to enhance your well-being.", 30);
+        Activity.BufferAnimation(); // Start the loading animation
         int choice = 0;
         while (choice != 4)
         {
