@@ -1,4 +1,3 @@
-// SimpleGoal.cs
 class SimpleGoal : Goal
 {
     private bool _isComplete;
