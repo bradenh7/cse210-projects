@@ -28,13 +28,13 @@ public class Program
         order2.AddProduct(product1);
 
 
-        Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine(order1.GetShippingLabel());
-        Console.WriteLine($"Total Price: ${order.CalculateTotalPrice():0.00}");
+        Console.WriteLine(order1.GetPackingLabel());
+        Console.WriteLine($"Total Price: ${order.CalculateTotalPrice():0.00}\n");
 
-        Console.WriteLine(order2.GetPackingLabel());
         Console.WriteLine(order2.GetShippingLabel());
-        Console.WriteLine($"Total Price: ${order2.CalculateTotalPrice():0.00}");
+        Console.WriteLine(order2.GetPackingLabel());
+        Console.WriteLine($"Total Price: ${order2.CalculateTotalPrice():0.00}\n");
 
     }
 
