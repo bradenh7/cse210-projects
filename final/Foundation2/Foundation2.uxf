@@ -1,0 +1,28 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>280</x><y>100</y><w>210</w><h>190</h></coordinates><panel_attributes>Product
+--
+_name: string
+_id: int
+_quantity: int
+_price: double
+--
+PriceCalculator()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>80</y><w>210</w><h>190</h></coordinates><panel_attributes>Customer
+--
+_name: string
+_address: Address
+--
+UScheck()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>450</y><w>210</w><h>190</h></coordinates><panel_attributes>Address
+--
+_street
+_city
+_state
+_country
+--
+CountryIsUS()
+Display()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>450</y><w>210</w><h>190</h></coordinates><panel_attributes>Order
+--
+_bought: List&lt;Product&gt;
+_customer: Customer
+--
+TotalPrice()
+ShippingLabel()</panel_attributes><additional_attributes></additional_attributes></element></diagram>

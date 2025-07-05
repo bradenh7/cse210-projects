@@ -1,0 +1,30 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>330</x><y>120</y><w>210</w><h>190</h></coordinates><panel_attributes>Event
+--
+_eventTitle: string
+_eventDescription: string
+_date: string
+_time: string
+_address: Address
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>510</y><w>210</w><h>190</h></coordinates><panel_attributes>Lecture
+--
+_speakerName: string
+_capacity: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>510</y><w>210</w><h>190</h></coordinates><panel_attributes>reception
+--
+_email: string
+--
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>510</y><w>210</w><h>190</h></coordinates><panel_attributes>Outdoor
+--
+_weather: string
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>320</y><w>200</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;100;180;160</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>330</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>100</y><w>180</w><h>390</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;130;10;10;60;370</additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>80</y><w>210</w><h>190</h></coordinates><panel_attributes>Address
+--
+_street
+_city
+_state
+_country
+--
+Display()</panel_attributes><additional_attributes></additional_attributes></element></diagram>
