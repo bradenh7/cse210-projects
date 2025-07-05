@@ -30,7 +30,7 @@ public class Program
 
         Console.WriteLine(order1.GetShippingLabel());
         Console.WriteLine(order1.GetPackingLabel());
-        Console.WriteLine($"Total Price: ${order.CalculateTotalPrice():0.00}\n");
+        Console.WriteLine($"Total Price: ${order1.CalculateTotalPrice():0.00}\n");
 
         Console.WriteLine(order2.GetShippingLabel());
         Console.WriteLine(order2.GetPackingLabel());
