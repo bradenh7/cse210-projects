@@ -1,11 +1,13 @@
 public class Event
 {
+    // attributes for Event class
     private string title;
     private string description;
     private string date;
     private string time;
     private Address address;
 
+    // constructor for Event class
     public Event(string title, string description, string date, string time, Address address)
     {
         this.title = title;
@@ -15,12 +17,14 @@ public class Event
         this.address = address;
     }
 
+    // getters for Event class attributes
     public string GetTitle() => title;
     public string GetDescription() => description;
     public string GetDate() => date;
     public string GetTime() => time;
     public Address GetAddress() => address;
 
+    // methods to get event details
     public virtual string GetStandardDetails()
     {
         return $"Title: {title}\nDescription: {description}\nDate: {date}\nTime: {time}\nAddress: {address.GetFullAddress()}";

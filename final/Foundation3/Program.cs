@@ -5,18 +5,22 @@ class Program
 {
     static void Main()
     {
+        // Create some Address objects
         Address addr1 = new Address("123 Maple St", "Springfield", "IL", "USA");
         Address addr2 = new Address("456 Elm St", "Orlando", "FL", "USA");
         Address addr3 = new Address("789 Pine St", "Denver", "CO", "USA");
 
+        // Create Event objects of different types
         Event lecture = new Lecture("Future of AI", "A lecture on AI advancements", "2025-08-10", "10:00 AM", addr1, "Dr. Jane Smith", 100);
         Event reception = new Reception("Company Mixer", "An evening to connect", "2025-08-12", "6:00 PM", addr2, "rsvp@eventco.com");
         Event outdoor = new OutdoorGathering("Summer Festival", "Live music and food trucks", "2025-08-15", "3:00 PM", addr3, "Sunny, 85°F");
 
+        // Create a list of events and display their details
         List<Event> events = new List<Event> { lecture, reception, outdoor };
 
         foreach (Event e in events)
         {
+            // Display the event details
             Console.WriteLine("=== Standard Details ===");
             Console.WriteLine(e.GetStandardDetails());
             Console.WriteLine("\n=== Full Details ===");
